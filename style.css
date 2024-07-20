@@ -503,11 +503,11 @@
   }
   .hero_content{
     position: absolute;
-    top:15%;
-    left:20%;
+    top:30%;
+    left:5%;
   }
   .hero_content h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .hero_content button{
     margin-top: 10px;
