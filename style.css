@@ -1,0 +1,603 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;;
+}
+
+.topnav{
+  
+  background-color: black;
+  color: #E2E1E1;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.topnav h2{
+  cursor: pointer;
+  margin-right: 30%;
+} 
+.topnav p{
+  margin-left: 20%;
+}
+.mainbar{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+.menu{
+  display: flex;
+  gap:50px;
+}
+.menu li, .side_menu li{
+  list-style: none;
+}
+.menu li:hover, .side_menu li:hover{
+  text-decoration: underline;
+}
+
+.sidenav a,.mainbar a{
+  text-decoration: none;
+}
+
+#menubar{
+  display: none;
+}
+.sidenav{
+  width: 50%;
+  height: 100vh;
+  background-color: #1D232C;
+  color: #E2E1E1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left:-50%;
+  z-index: 4;
+}
+
+.close_sidenav{
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: right;
+  
+}
+.side_menu{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.hero_section{
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  width: 98%;
+  height: 70vh;
+  border: solid black 1px;
+  border-radius: 10px;
+  background: url("./images/slider-one.jpg") center/cover ;
+}
+
+.hero_content{
+  color: white;
+  position: absolute;
+  top:30%;
+  left:20%;
+}
+.hero_content h1{
+  font-size: 4rem;
+}
+.hero_content button{
+  margin-top: 20px;
+  padding: 10px;
+}
+.brand{
+  margin-top: 5%;
+  margin: 10px;
+}
+.brand_container{
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand_container img{
+  width: 30%;
+}
+
+
+.review{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review_h{
+  width: 40%;
+}
+.review_p{
+  width: 50%;
+  font-size: 1.4rem;
+}
+
+.customer_review{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.coursecard{
+  margin: 5px;
+  width: 23%;
+  background-color: #F2F4F7;
+  border-radius: 5px;
+  padding: 5px;
+}
+.coursecard h1{
+  font-size: 3rem;
+}
+
+.product_section{
+  margin-top:50px;
+}
+.product_container{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product{
+  width: 23%;
+  position: relative;
+  margin: 10px;
+}
+.product img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+.product button{
+  position: absolute;
+  background-color: rgb(255, 255, 255,0.9);
+  color: black;
+  padding: 10px;
+  top:60%;
+  left: 30%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: transparent;
+  
+}
+.recommended_section{
+  margin-top: 50px;
+}
+.recommended_container{
+  margin-top: 10px;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  gap:20px;
+
+  
+}
+.recommended{
+  position:relative;
+  margin: 10px;
+}
+ .recommended img{
+  width: 20vw;
+  border-radius: 10px;
+  opacity: 0.95;
+ }
+ .recommended button{
+  width: 30%;
+  position: absolute;
+  background-color: rgb(255, 0, 0,0.9);
+  color: white;
+  padding: 3px;
+  margin: 2px;
+  top:0%;
+  left: 0%;
+  font-size:1.2rem;
+  border-radius: 5px;
+  border: transparent;  
+}
+.recommended h1{
+  width: 15%;
+  position: absolute;
+  bottom:12%;
+  right: 5%;
+}
+.recommended_container::-webkit-scrollbar{
+  appearance: none;
+}
+.offer_section{
+  margin: 5px;
+  width: 98vw;
+  height: 50vh;
+  background-color: #1D232C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer_image{
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 40vw;
+  height: 70%;
+  background: url("./images/offer.jpg") bottom center ;
+}
+ .offer_content{
+  color:#E2E1E1;
+  margin: 10%;
+  padding-right:10% ;
+  text-wrap: nowrap;
+ }
+
+ .offer_content button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+ }
+
+
+
+
+/* Media Query */
+@media screen and (max-width:1400px) {
+  .topnav h2{
+    margin-right: 10%;
+  } 
+  .topnav p{
+    margin-left: 20%;
+  }
+
+  .offer_image{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 80vw;
+    height: 70%;
+    background: url("./images/offer.jpg") center/cover ;
+  }
+   .offer_content{
+    color:#E2E1E1;
+    margin: 5%;
+    padding-right:5% ;
+    text-wrap: nowrap;
+    font-size: 1rem;
+   }
+}
+
+@media screen and (max-width:1100px) {
+  .hero_content{
+    position: absolute;
+    top:20%;
+    left:10%;
+  }
+  .hero_content h1{
+    font-size: 3.5rem;
+  }
+  .brand_container{
+    
+    font-size: 1.5rem;
+    
+  }
+  .review{
+    margin-top: 5%;
+  }
+  
+  .review_h{
+    width: 40%;
+    font-size: 0.8rem;
+  }
+  .review_p{
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  
+  .customer_review{
+    margin-top: 20px;
+  }
+  .coursecard{
+    margin: 5px;
+    width: 22%;
+    padding: 1px;
+  }
+  .coursecard h1{
+    font-size: 2rem;
+  }
+  
+  .coursecard h4{
+    font-size: 0.8rem;
+  }
+
+  .coursecard p{
+    font-size: 0.7rem;
+  }
+  .offer_image{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 40vw;
+    height: 70%;
+    background: url("./images/offer.jpg") center/cover ;
+  }
+   .offer_content{
+    color:#E2E1E1;
+    margin: 5%;
+    padding-right:5% ;
+    text-wrap: nowrap;
+    font-size: 1rem;
+   }
+  
+  
+
+}
+
+
+
+@media screen and (max-width:900px) {
+  .topnav h2{
+    margin-right: 10%;
+  } 
+  .topnav p{
+    margin-left: 20%;
+  }
+  .menu{
+    display: none;
+  }
+  #menubar{
+    display: inline;
+    cursor: pointer;
+    margin: 2px;
+  }
+  .sidenav{
+    left: 0%;
+    display: none;
+  }
+  .hero_section{
+    height: 60vh;
+  }
+  .hero_content{
+    position: absolute;
+    top:20%;
+    left:20%;
+  }
+  .hero_content h1{
+    font-size: 2.5rem;
+  }
+  .brand{
+    margin-top: 2%;
+    
+  }
+  .brand_container{
+    font-size: 1rem;
+   
+  }
+  
+  .review_h{
+    font-size: 0.8rem;
+  }
+  .review_p{
+    font-size: 0.8rem;
+  }
+
+  .customer_review{
+    margin-top: 20px;
+  }
+  .coursecard{
+    margin: 5px;
+    width: 22%;
+    padding: 15px;
+  }
+  .coursecard h1{
+    font-size: 1.5rem;
+  }
+  
+  .coursecard h4{
+    font-size: 0.5rem;
+  }
+
+  .coursecard p{
+    font-size: 0.5rem;
+  }
+  .product_section{
+    margin-top:30px;
+  }
+  
+  .product{
+    width: 20%;
+  }
+  .product img{
+    width: 100%;
+    height: 200px;
+    opacity: 0.95;
+  }
+  .product button{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    font-size: 1rem;
+    border-radius: 10px;
+    
+  }
+  .offer_image{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 70vw;
+    height: 70%;
+    background: url("./images/offer.jpg") center/cover ;
+  }
+   .offer_content{
+    color:#E2E1E1;
+    margin: 5%;
+    padding-right:5% ;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+   }
+
+  
+  
+}
+
+
+
+
+@media screen and (max-width:600px) {
+  .topnav h2{
+    margin-right: 2%;
+  } 
+  .topnav p{
+    margin-left: 2%;
+  }
+  .hero_content{
+    position: absolute;
+    top:15%;
+    left:20%;
+  }
+  .hero_content h1{
+    font-size: 1.5rem;
+  }
+  .hero_content button{
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  
+  .hero_section{
+    width: 95%;
+    height: 40vh;
+  }
+  .brand{
+    margin-top: 3%;
+    margin: 10px;
+  }
+  .brand_container{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 0.5rem;
+  }
+  
+  .review_h{
+    width: 40%;
+    font-size: 0.5rem;
+  }
+  .review_p{
+    width: 60%;
+    font-size: 0.5rem;
+  }
+  .coursecard{
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .coursecard h1{
+    font-size: 1rem;
+  }
+  .coursecard h4{
+    font-size: 0.4rem;
+  }
+  .coursecard p{
+    font-size: 0.3rem;
+  }
+  
+  .product_section{
+    margin-top:30px;
+  }
+  .product_section h1{
+    font-size: 1.5rem;
+  }
+  .product_container{
+    margin-top: 5px;
+  }
+  
+  .product img{
+    width: 100%;
+    height: 100px;
+  }
+  .product button{
+    position: absolute;
+    background-color: rgb(255, 255, 255,1);
+    color: black;
+    padding: 5px;
+    top:40%;
+    left: 20%;
+    font-size: 0.5rem;
+    border-radius: 5px;
+    border: transparent;
+    
+  }
+  .recommended_section{
+    margin-top: 50px;
+  }
+  .recommended_container{
+    margin-top: 10px;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+    gap:20px;
+  
+    
+  }
+  .recommended{
+    position:relative;
+    margin: 10px;
+  }
+   .recommended img{
+    width: 20vw;
+    border-radius: 10px;
+    opacity: 0.95;
+   }
+   .recommended button{
+    width: 40%;
+    position: absolute;
+    font-size:0.5rem;
+    border-radius: 5px;
+    border: transparent;  
+  }
+  .recommended h1{
+    font-size: 1rem;
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+  }
+  .offer_image{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 60vw;
+    height: 50%;
+    background: url("./images/offer.jpg") center/cover ;
+  }
+
+   .offer_content{
+    color:#E2E1E1;
+    margin: 5%;
+    padding-right:5% ;
+    text-wrap: nowrap;
+    font-size: 0.5rem;
+   }
+  
+   .offer_content button{
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.5rem;
+   }
+  
+}
+
+
